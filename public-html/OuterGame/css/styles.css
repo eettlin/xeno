@@ -1,0 +1,183 @@
+
+body{
+   background-color: #444444;
+   margin:0;
+}
+
+canvas {
+	cursor: none;
+}
+.infoPanelDiv {
+  width: 129px;
+  height: 80px;
+  float:left;
+  background-color: white;
+  border: black solid 2px;
+  margin-left: 150px;
+  margin-right: 0px;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.shipLvls{
+  margin: 0px;
+}
+
+#infoPanel {
+  width:1024px;
+  height:100px;
+  float:left;
+  background-color: #7bc6b9;
+
+}
+#wrapper {
+  display: none;
+  border: 0px solid black;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  width: 1024px;
+  height: 676px;
+  position: relative;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99.5%;
+    height: 67%;
+    z-index: 1000;
+}
+
+.info {
+  width: 129px;
+  height: 80px;
+  float:left;
+  background-color: white;
+  border: black solid 2px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 8px;
+  border-radius: 10px;
+
+}
+#infoDiv {
+  width:1024px;
+  height:100px;
+  float:left;
+  background-color: green;
+
+}
+
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+.head {
+  display: none;
+  width: 1024px;
+  position: relative;
+}
+.head img {
+  width: inherit;
+}
+
+#help {
+  position: absolute;
+  top: 50px;
+  width: 50px;
+  left: 974px;
+}
+#help img {
+  width: inherit;
+}
+
+.gamepanel {
+  display: none;
+  width: 1024px;
+  position: absolute;
+}
+.gamepanel img {
+  width: inherit;
+}
+
+#spacebar1{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  bottom: 65px;
+  left: 43%;
+}
+
+#spacebar2{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}

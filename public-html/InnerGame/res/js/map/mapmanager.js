@@ -5,13 +5,33 @@ init the map
 *  Owns the tower manager (towers are on the map)
 *  Owns anything that is contained by a cell objects (cells are tiles)
 */
+
+
 class MapManager extends Updateable {
+
+  loadScript(url, callback) {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+
+    script.onload = function() {
+        if (callback) callback();
+    };
+
+    document.head.appendChild(script);
+}
+
+  
   constructor(game) {
     super();
     this.map = [];
     this.game = game;
     this.validStartTiles = [];
-    this.towerManager = new TowerManager(this.game);
+
+    loadScript('towermanager.js', function() {
+      this.towerManager = new TowerManager(this.game);
+    })
+    
     //this.grassImage=map_config.grass_image;
     // issue 118 use image loaded only once
     this.grassImage = Images.grass;
